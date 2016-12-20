@@ -1,11 +1,10 @@
 #!/bin/bash
 set -e
 
-
     if [ ! -d "$GHOST_CONTENT/themes" ]; then
         # give database a few seconds to initiate before we attempt to connect the first time
         echo "----------> Sleeping to give database time to initialize..."
-        sleep 10
+        sleep 0.1
     fi
 
 	baseDir="$GHOST_SOURCE/content"

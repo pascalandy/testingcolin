@@ -35,11 +35,11 @@ rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 	echo && echo "Checkpoint 2" && sleep 1 && echo
 
 
-### Leaving a trace on dockerbuild
+### Leaving a trace in the dockerbuild
 ENV_DATE_SEC="$(date +%Y-%m-%d_%H-%M-%S -d  "5 hour ago")"
 ENV_LOG="$DIR_PROJECT"_dockerbuild-log_"$ENV_DATE_SEC".txt
 touch /"$ENV_LOG"
-echo "Leaving a trace on dockerbuild: $ENV_LOG"
+echo "Leaving a trace in the dockerbuild: $ENV_LOG"
 	echo && echo "Checkpoint 3" && sleep 1 && echo
 
 
