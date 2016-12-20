@@ -1,4 +1,4 @@
-FROM ghost:0.11.3
+FROM ghost:0.11.0
 
 ADD runthis.sh /runthis.sh
 RUN chmod +x /runthis.sh; sync; sleep 1; /runthis.sh

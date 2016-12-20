@@ -1,7 +1,7 @@
 set -e
 DEBIAN_FRONTEND=noninteractive
 
-DIR_PROJECT=gst2-base-0.11.2-colinmeinke
+DIR_PROJECT=gst2-base-0.11.X-colinmeinke
 
 ## https://github.com/colinmeinke/ghost-storage-adapter-s3
 ## npm info postinstall ghost-storage-adapter-s3@1.2.0
