@@ -24,7 +24,7 @@ set -e
 	fi
 
 	ln -sf "$GHOST_CONTENT/config.js" "$GHOST_SOURCE/config.js"
-	ln -sf "$GHOST_SOURCE/storage/s3" "$GHOST_CONTENT/storage/s3"
+	ln -sf "$GHOST_SOURCE/content/storage/s3" "$GHOST_CONTENT/storage/s3"
 	
 	chown -R user "$GHOST_CONTENT"
 
