@@ -14,9 +14,11 @@ echo && echo "START - runthis.sh" && sleep 1 && echo
 
 
 ### Install ghost-storage-adapter-s3@1.2.0 in $GHOST_CONTENT
+cd $GHOST_SOURCE
 npm install ghost-storage-adapter-s3
 mkdir -p ./content/storage
 cp -r ./node_modules/ghost-storage-adapter-s3 ./content/storage/s3
+ln -s /usr/src/ghost/core /var/lib/core
 pwd
 	echo && echo "Checkpoint 1"  && sleep 1 && echo
 
