@@ -5,7 +5,7 @@
 #	ghost-storage-adapter-s3@1.2.0
 
 ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### #
-ENV_IMG_NAME="gst2-s3-adaptor"
+ENV_IMG_NAME="gst2-s3"
 ENV_SOFT_VER="v0.11.0"
     ENV_FROM="ghost:0.11.0"
 	

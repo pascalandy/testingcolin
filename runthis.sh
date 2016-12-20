@@ -1,7 +1,8 @@
 set -e
 DEBIAN_FRONTEND=noninteractive
 
-DIR_PROJECT=gst2-base-0.11.X-colinmeinke
+# This shall use source build-config.sh ($ENV_IMG_NAME)
+DIR_PROJECT=gst2-s3
 
 ## https://github.com/colinmeinke/ghost-storage-adapter-s3
 ## npm info postinstall ghost-storage-adapter-s3@1.2.0
@@ -37,9 +38,9 @@ rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 ### Leaving a trace on dockerbuild
 ENV_DATE_SEC="$(date +%Y-%m-%d_%H-%M-%S -d  "5 hour ago")"
 ENV_LOG="$DIR_PROJECT"_dockerbuild-log_"$ENV_DATE_SEC".txt
-echo "Leaving a trace on dockerbuild: $ENV_LOG"
 touch /"$ENV_LOG"
+echo "Leaving a trace on dockerbuild: $ENV_LOG"
 	echo && echo "Checkpoint 3" && sleep 1 && echo
-	
+
 
 echo && echo "END - runthis.sh" && sleep 1 && echo
