@@ -1,6 +1,8 @@
 #!/bin/bash
 set -e
 
+if [[ "$*" == npm*start* ]]; then
+
     if [ ! -d "$GHOST_CONTENT/themes" ]; then
         # give database a few seconds to initiate before we attempt to connect the first time
         echo "----------> Sleeping to give database time to initialize..."
@@ -29,5 +31,7 @@ set -e
 	chown -R user "$GHOST_CONTENT"
 
 	set -- gosu user "$@"
+
+fi
 
 exec "$@"
